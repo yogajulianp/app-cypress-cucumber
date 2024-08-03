@@ -1,0 +1,21 @@
+{
+  "name": "app-cypress-cucumber",
+  "version": "1.0.0",
+  "description": "App for testing with cypress and cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yoga Julian Prasutiyo",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.2",
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "cypress": "^13.13.2",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/homepage"
+  }
+}
